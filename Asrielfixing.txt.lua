@@ -2,7 +2,6 @@
 -- CREATED BY EXPINATION
 -- CREATED BY EXPINATION
 
-Reanimate()
 
 local script = game:GetObjects("rbxassetid://11162443753")[1].Dreemurr
 script.Parent = workspace.non
@@ -26,7 +25,8 @@ end
 
 local createSound = function(instance,soundid,volume,destroy,pitch)
 	local sound = Instance.new("Sound")
-	sound.SoundId = "rbxassetid://" .. soundid
+	sound.SoundId = "rbxassetid://"..
+	soundid
 	sound.Volume = volume
 	sound.Parent = instance
 	sound:Play()
