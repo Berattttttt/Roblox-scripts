@@ -2089,7 +2089,8 @@ local function fallingStar(position,typ)
 			MagniDamage(attachment,12,20,30)
 			createSound(attachment,6859407462,2,true,2)
 			Debris:AddItem(attachment,5)
-                        shakeCamera(3, workspace.non.HumanoidRootPart.Position, true)
+                        shakeCamera(3, workspace.
+                   .HumanoidRootPart.Position, true)
 			createEffect("explosion",nil,nil,nil,nil,nil,nil,nil,nil,tableExp)
 			local shockwave = ShockwaveObject:Clone()
 			shockwave.Position = position + Vector3.new(0,3,0)
@@ -2167,7 +2168,7 @@ local function fallingStar(position,typ)
 			MagniDamage(attachment,50,85,100)
 			createSound(attachment,6859407462,10,true)
 			Debris:AddItem(attachment,5)
-                        shakeCamera(3, workspace.non.HumanoidRootPart.Position, true)
+                        shakeCamera(3, ..HumanoidRootPart.Position, true)
 			createEffect("explosion",nil,nil,nil,nil,nil,nil,nil,nil,tableExp)
 			CraterCreator.Create(30,position,15)
 			local shockwave = ShockwaveObject:Clone()
@@ -2270,7 +2271,8 @@ function mouseDown()
 			--print(mouse.Hit)
 			soundEffect:Play()
 			MagniDamage(A2,15,30,40)
-                        shakeCamera(3, workspace.non.HumanoidRootPart.Position, true)
+                        shakeCamera
+                        workspace.HumanoidRootPart.Position, true)
 		end
 		
 		if chaossaber == true and debounce == false then
@@ -2446,7 +2448,7 @@ function mouseDown()
 						debounce = false
 					end
 				end)
-                                shakeCamera(3, workspace.non.HumanoidRootPart.Position, true)
+                   .HumanoidRootPart.Position, true)
 				createSound(origin,5880986785,4,true,.7)
 				local shock = ShockObject:Clone()
 				shock.Parent = workspace.Terrain
