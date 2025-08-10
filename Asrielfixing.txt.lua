@@ -97,7 +97,7 @@ function SetTween(SPart,CFr,MoveStyle2,outorin2,AnimTime)
 	tweenanim:Play()
 end
 local Player = game:GetService("Players").LocalPlayer
-local Character = workspace.non
+local Character = 
 
 local Torso = Character:WaitForChild("Torso",15)
 local Head = Character:WaitForChild("Head",15)
