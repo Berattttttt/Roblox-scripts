@@ -4,7 +4,6 @@
 
 
 local script = game:GetObjects("rbxassetid://11162443753")[1].Dreemurr
-script.Parent = workspace.non
 
 local qoute = [[
 ASRIEL DREEMURR (incomplete)
