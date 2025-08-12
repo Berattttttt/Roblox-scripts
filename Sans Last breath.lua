@@ -78,7 +78,7 @@ TextLabel.Parent = textboard
 
 
 ------------------------------------------------------------------------------------------------------------------
-local Player = game.Players.LocalPlayer   --<=== Replace With Your Name
+local Player = game.Players.LocalPlayer MoonOfSkys  
 
 
 local Mouse,mouse,UserInputService,ContextActionService
