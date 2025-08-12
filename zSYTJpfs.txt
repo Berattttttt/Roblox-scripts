@@ -1,0 +1,1201 @@
+--By Rufus14
+--Converted with ttyyuu12345's model to script plugin v4
+function sandbox(var,func)
+	local env = getfenv(func)
+	local newenv = setmetatable({},{
+		__index = function(self,k)
+			if k=="script" then
+				return var
+			else
+				return env[k]
+			end
+		end,
+	})
+	setfenv(func,newenv)
+	return func
+end
+cors = {}
+mas = Instance.new("Model",game:GetService("Lighting"))
+Model0 = Instance.new("Model")
+Part1 = Instance.new("Part")
+Sound2 = Instance.new("Sound")
+Sound3 = Instance.new("Sound")
+RemoteEvent4 = Instance.new("RemoteEvent")
+Sound5 = Instance.new("Sound")
+RemoteEvent6 = Instance.new("RemoteEvent")
+Sound7 = Instance.new("Sound")
+RemoteEvent8 = Instance.new("RemoteEvent")
+Sound9 = Instance.new("Sound")
+RemoteEvent10 = Instance.new("RemoteEvent")
+Sound11 = Instance.new("Sound")
+RemoteEvent12 = Instance.new("RemoteEvent")
+Sound13 = Instance.new("Sound")
+RemoteEvent14 = Instance.new("RemoteEvent")
+Sound15 = Instance.new("Sound")
+RemoteEvent16 = Instance.new("RemoteEvent")
+Sound17 = Instance.new("Sound")
+RemoteEvent18 = Instance.new("RemoteEvent")
+Sound19 = Instance.new("Sound")
+RemoteEvent20 = Instance.new("RemoteEvent")
+Decal21 = Instance.new("Decal")
+Sound22 = Instance.new("Sound")
+Sound23 = Instance.new("Sound")
+SpecialMesh24 = Instance.new("SpecialMesh")
+Sound25 = Instance.new("Sound")
+Sound26 = Instance.new("Sound")
+Sound27 = Instance.new("Sound")
+Sound28 = Instance.new("Sound")
+Weld29 = Instance.new("Weld")
+Weld30 = Instance.new("Weld")
+Weld31 = Instance.new("Weld")
+Weld32 = Instance.new("Weld")
+Part33 = Instance.new("Part")
+Decal34 = Instance.new("Decal")
+Weld35 = Instance.new("Weld")
+Weld36 = Instance.new("Weld")
+Weld37 = Instance.new("Weld")
+Weld38 = Instance.new("Weld")
+Weld39 = Instance.new("Weld")
+Part40 = Instance.new("Part")
+Part41 = Instance.new("Part")
+Part42 = Instance.new("Part")
+Part43 = Instance.new("Part")
+Humanoid44 = Instance.new("Humanoid")
+Part45 = Instance.new("Part")
+Weld46 = Instance.new("Weld")
+Weld47 = Instance.new("Weld")
+Script48 = Instance.new("Script")
+BodyColors49 = Instance.new("BodyColors")
+Script50 = Instance.new("Script")
+Part51 = Instance.new("Part")
+Part52 = Instance.new("Part")
+Pants53 = Instance.new("Pants")
+Shirt54 = Instance.new("Shirt")
+Part55 = Instance.new("Part")
+SpecialMesh56 = Instance.new("SpecialMesh")
+Part57 = Instance.new("Part")
+SpecialMesh58 = Instance.new("SpecialMesh")
+Camera59 = Instance.new("Camera")
+Model0.Name = "SCP-049"
+Model0.Parent = mas
+Model0.PrimaryPart = Part1
+Part1.Name = "Head"
+Part1.Parent = Model0
+Part1.CFrame = CFrame.new(-31.8107185, 4.50000095, -46.1854477, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Part1.Orientation = Vector3.new(0, 180, 0)
+Part1.Position = Vector3.new(-31.8107185, 4.50000095, -46.1854477)
+Part1.Rotation = Vector3.new(-180, 0, -180)
+Part1.Color = Color3.new(0.0666667, 0.0666667, 0.0666667)
+Part1.Size = Vector3.new(2, 1, 1)
+Part1.BrickColor = BrickColor.new("Really black")
+Part1.TopSurface = Enum.SurfaceType.Smooth
+Part1.brickColor = BrickColor.new("Really black")
+Part1.FormFactor = Enum.FormFactor.Symmetric
+Part1.formFactor = Enum.FormFactor.Symmetric
+Sound2.Name = "weallfalldown"
+Sound2.Parent = Part1
+Sound2.SoundId = "rbxassetid://707692082"
+Sound3.Name = "GettingUp"
+Sound3.Parent = Part1
+Sound3.MaxDistance = 150
+Sound3.EmitterSize = 5
+Sound3.MinDistance = 5
+Sound3.SoundId = "rbxasset://sounds/action_get_up.mp3"
+Sound3.Volume = 0.64999997615814
+RemoteEvent4.Name = "CharacterSoundEvent"
+RemoteEvent4.Parent = Sound3
+Sound5.Name = "Died"
+Sound5.Parent = Part1
+Sound5.MaxDistance = 150
+Sound5.EmitterSize = 5
+Sound5.MinDistance = 5
+Sound5.SoundId = "rbxasset://sounds/uuhhh.mp3"
+Sound5.Volume = 0.64999997615814
+RemoteEvent6.Name = "CharacterSoundEvent"
+RemoteEvent6.Parent = Sound5
+Sound7.Name = "FreeFalling"
+Sound7.Parent = Part1
+Sound7.Looped = true
+Sound7.TimePosition = 0.087562686572596
+Sound7.MaxDistance = 150
+Sound7.EmitterSize = 5
+Sound7.MinDistance = 5
+Sound7.SoundId = "rbxasset://sounds/action_falling.mp3"
+Sound7.Volume = 0
+RemoteEvent8.Name = "CharacterSoundEvent"
+RemoteEvent8.Parent = Sound7
+Sound9.Name = "Jumping"
+Sound9.Parent = Part1
+Sound9.MaxDistance = 150
+Sound9.EmitterSize = 5
+Sound9.MinDistance = 5
+Sound9.SoundId = "rbxasset://sounds/action_jump.mp3"
+Sound9.Volume = 0.64999997615814
+RemoteEvent10.Name = "CharacterSoundEvent"
+RemoteEvent10.Parent = Sound9
+Sound11.Name = "Landing"
+Sound11.Parent = Part1
+Sound11.MaxDistance = 150
+Sound11.EmitterSize = 5
+Sound11.MinDistance = 5
+Sound11.SoundId = "rbxasset://sounds/action_jump_land.mp3"
+Sound11.Volume = 1
+RemoteEvent12.Name = "CharacterSoundEvent"
+RemoteEvent12.Parent = Sound11
+Sound13.Name = "Splash"
+Sound13.Parent = Part1
+Sound13.MaxDistance = 150
+Sound13.EmitterSize = 5
+Sound13.MinDistance = 5
+Sound13.SoundId = "rbxasset://sounds/impact_water.mp3"
+Sound13.Volume = 0.64999997615814
+RemoteEvent14.Name = "CharacterSoundEvent"
+RemoteEvent14.Parent = Sound13
+Sound15.Name = "Running"
+Sound15.Parent = Part1
+Sound15.Looped = true
+Sound15.MaxDistance = 150
+Sound15.EmitterSize = 5
+Sound15.MinDistance = 5
+Sound15.Pitch = 1.8500000238419
+Sound15.PlaybackSpeed = 1.8500000238419
+Sound15.SoundId = "rbxasset://sounds/action_footsteps_plastic.mp3"
+Sound15.Volume = 0.64999997615814
+RemoteEvent16.Name = "CharacterSoundEvent"
+RemoteEvent16.Parent = Sound15
+Sound17.Name = "Swimming"
+Sound17.Parent = Part1
+Sound17.Looped = true
+Sound17.MaxDistance = 150
+Sound17.EmitterSize = 5
+Sound17.MinDistance = 5
+Sound17.Pitch = 1.6000000238419
+Sound17.PlaybackSpeed = 1.6000000238419
+Sound17.SoundId = "rbxasset://sounds/action_swim.mp3"
+Sound17.Volume = 0.64999997615814
+RemoteEvent18.Name = "CharacterSoundEvent"
+RemoteEvent18.Parent = Sound17
+Sound19.Name = "Climbing"
+Sound19.Parent = Part1
+Sound19.Looped = true
+Sound19.MaxDistance = 150
+Sound19.EmitterSize = 5
+Sound19.MinDistance = 5
+Sound19.SoundId = "rbxasset://sounds/action_footsteps_plastic.mp3"
+Sound19.Volume = 0.64999997615814
+RemoteEvent20.Name = "CharacterSoundEvent"
+RemoteEvent20.Parent = Sound19
+Decal21.Name = "face"
+Decal21.Parent = Part1
+Decal21.Texture = "rbxassetid://0"
+Sound22.Name = "Hit1"
+Sound22.Parent = Part1
+Sound22.SoundId = "rbxassetid://188614070"
+Sound22.Volume = 1
+Sound23.Name = "Hit2"
+Sound23.Parent = Part1
+Sound23.SoundId = "rbxassetid://188614117"
+Sound23.Volume = 1
+SpecialMesh24.Parent = Part1
+SpecialMesh24.Scale = Vector3.new(1.20000005, 1.20000005, 1.20000005)
+Sound25.Name = "theme"
+Sound25.Parent = Part1
+Sound25.Looped = true
+Sound25.Playing = true
+Sound25.SoundId = "rbxassetid://1416351484"
+Sound25.Volume = 1
+Sound26.Name = "hello"
+Sound26.Parent = Part1
+Sound26.SoundId = "rbxassetid://1104302594"
+Sound27.Name = "footstep"
+Sound27.Parent = Part1
+Sound27.MaxDistance = 40
+Sound27.Pitch = 0.69999998807907
+Sound27.PlaybackSpeed = 0.69999998807907
+Sound27.SoundId = "rbxassetid://2991635108"
+Sound28.Name = "ohmy"
+Sound28.Parent = Part1
+Sound28.SoundId = "rbxassetid://487003745"
+Weld29.Parent = Part1
+Weld29.C0 = CFrame.new(0.224998474, 0.0999999046, -0.525001526, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Weld29.Part0 = Part1
+Weld29.Part1 = Part51
+Weld29.part1 = Part51
+Weld30.Parent = Part1
+Weld30.C0 = CFrame.new(0, 0.100029469, -7.62939453e-06, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Weld30.Part0 = Part1
+Weld30.Part1 = Part57
+Weld30.part1 = Part57
+Weld31.Parent = Part1
+Weld31.C0 = CFrame.new(0, -4.76837158e-07, -0.899990082, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Weld31.Part0 = Part1
+Weld31.Part1 = Part55
+Weld31.part1 = Part55
+Weld32.Parent = Part1
+Weld32.C0 = CFrame.new(-0.224998474, 0.0999999046, -0.525001526, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Weld32.Part0 = Part1
+Weld32.Part1 = Part52
+Weld32.part1 = Part52
+Part33.Name = "Torso"
+Part33.Parent = Model0
+Part33.CFrame = CFrame.new(-31.8107185, 3.00000095, -46.1854477, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Part33.Orientation = Vector3.new(0, 180, 0)
+Part33.Position = Vector3.new(-31.8107185, 3.00000095, -46.1854477)
+Part33.Rotation = Vector3.new(-180, 0, -180)
+Part33.Color = Color3.new(0.0666667, 0.0666667, 0.0666667)
+Part33.Size = Vector3.new(1.5999999, 2, 1)
+Part33.BrickColor = BrickColor.new("Really black")
+Part33.LeftParamA = 0
+Part33.LeftParamB = 0
+Part33.LeftSurface = Enum.SurfaceType.Weld
+Part33.RightParamA = 0
+Part33.RightParamB = 0
+Part33.RightSurface = Enum.SurfaceType.Weld
+Part33.brickColor = BrickColor.new("Really black")
+Part33.FormFactor = Enum.FormFactor.Symmetric
+Part33.formFactor = Enum.FormFactor.Symmetric
+Decal34.Name = "roblox"
+Decal34.Parent = Part33
+Weld35.Name = "Left Hip"
+Weld35.Parent = Part33
+Weld35.C0 = CFrame.new(-0.400000006, -2, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Weld35.Part0 = Part33
+Weld35.Part1 = Part42
+Weld35.part1 = Part42
+Weld36.Name = "Right Hip"
+Weld36.Parent = Part33
+Weld36.C0 = CFrame.new(0.399999976, -2, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Weld36.Part0 = Part33
+Weld36.Part1 = Part43
+Weld36.part1 = Part43
+Weld37.Name = "Neck"
+Weld37.Parent = Part33
+Weld37.C0 = CFrame.new(0, 1.5, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Weld37.Part0 = Part33
+Weld37.Part1 = Part1
+Weld37.part1 = Part1
+Weld38.Name = "Left Shoulder"
+Weld38.Parent = Part33
+Weld38.C0 = CFrame.new(-1.20000017, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Weld38.Part0 = Part33
+Weld38.Part1 = Part40
+Weld38.part1 = Part40
+Weld39.Name = "Right Shoulder"
+Weld39.Parent = Part33
+Weld39.C0 = CFrame.new(1.14999998, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Weld39.Part0 = Part33
+Weld39.Part1 = Part41
+Weld39.part1 = Part41
+Part40.Name = "Left Arm"
+Part40.Parent = Model0
+Part40.CFrame = CFrame.new(-30.6107178, 3.00000095, -46.1854477, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Part40.Orientation = Vector3.new(0, 180, 0)
+Part40.Position = Vector3.new(-30.6107178, 3.00000095, -46.1854477)
+Part40.Rotation = Vector3.new(-180, 0, -180)
+Part40.Color = Color3.new(0.0666667, 0.0666667, 0.0666667)
+Part40.Size = Vector3.new(0.800000012, 2, 1)
+Part40.BrickColor = BrickColor.new("Really black")
+Part40.CanCollide = false
+Part40.brickColor = BrickColor.new("Really black")
+Part40.FormFactor = Enum.FormFactor.Symmetric
+Part40.formFactor = Enum.FormFactor.Symmetric
+Part41.Name = "Right Arm"
+Part41.Parent = Model0
+Part41.CFrame = CFrame.new(-32.9607201, 3.00000095, -46.1854477, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Part41.Orientation = Vector3.new(0, 180, 0)
+Part41.Position = Vector3.new(-32.9607201, 3.00000095, -46.1854477)
+Part41.Rotation = Vector3.new(-180, 0, -180)
+Part41.Color = Color3.new(0.0666667, 0.0666667, 0.0666667)
+Part41.Size = Vector3.new(0.800000012, 2, 1)
+Part41.BrickColor = BrickColor.new("Really black")
+Part41.CanCollide = false
+Part41.brickColor = BrickColor.new("Really black")
+Part41.FormFactor = Enum.FormFactor.Symmetric
+Part41.formFactor = Enum.FormFactor.Symmetric
+Part42.Name = "Left Leg"
+Part42.Parent = Model0
+Part42.CFrame = CFrame.new(-31.4107189, 1.00000095, -46.1854477, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Part42.Orientation = Vector3.new(0, 180, 0)
+Part42.Position = Vector3.new(-31.4107189, 1.00000095, -46.1854477)
+Part42.Rotation = Vector3.new(-180, 0, -180)
+Part42.Color = Color3.new(0.0666667, 0.0666667, 0.0666667)
+Part42.Size = Vector3.new(0.800000012, 2, 1)
+Part42.BottomSurface = Enum.SurfaceType.Smooth
+Part42.BrickColor = BrickColor.new("Really black")
+Part42.CanCollide = false
+Part42.brickColor = BrickColor.new("Really black")
+Part42.FormFactor = Enum.FormFactor.Symmetric
+Part42.formFactor = Enum.FormFactor.Symmetric
+Part43.Name = "Right Leg"
+Part43.Parent = Model0
+Part43.CFrame = CFrame.new(-32.2107201, 1.00000095, -46.1854477, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Part43.Orientation = Vector3.new(0, 180, 0)
+Part43.Position = Vector3.new(-32.2107201, 1.00000095, -46.1854477)
+Part43.Rotation = Vector3.new(-180, 0, -180)
+Part43.Color = Color3.new(0.0666667, 0.0666667, 0.0666667)
+Part43.Size = Vector3.new(0.800000012, 2, 1)
+Part43.BottomSurface = Enum.SurfaceType.Smooth
+Part43.BrickColor = BrickColor.new("Really black")
+Part43.CanCollide = false
+Part43.brickColor = BrickColor.new("Really black")
+Part43.FormFactor = Enum.FormFactor.Symmetric
+Part43.formFactor = Enum.FormFactor.Symmetric
+Humanoid44.Parent = Model0
+Humanoid44.Health = 300
+Humanoid44.JumpPower = 45
+Humanoid44.LeftLeg = Part42
+Humanoid44.MaxHealth = 300
+Humanoid44.NameDisplayDistance = 0
+Humanoid44.RightLeg = Part43
+Humanoid44.Torso = Part45
+Humanoid44.WalkSpeed = 7
+Humanoid44.maxHealth = 300
+Part45.Name = "HumanoidRootPart"
+Part45.Parent = Model0
+Part45.CFrame = CFrame.new(-31.8107185, 3.00000095, -46.1854477, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Part45.Orientation = Vector3.new(0, 180, 0)
+Part45.Position = Vector3.new(-31.8107185, 3.00000095, -46.1854477)
+Part45.Rotation = Vector3.new(-180, 0, -180)
+Part45.Transparency = 1
+Part45.Size = Vector3.new(1.5999999, 2, 1)
+Part45.BottomSurface = Enum.SurfaceType.Smooth
+Part45.CanCollide = false
+Part45.LeftParamA = 0
+Part45.LeftParamB = 0
+Part45.RightParamA = 0
+Part45.RightParamB = 0
+Part45.TopSurface = Enum.SurfaceType.Smooth
+Part45.FormFactor = Enum.FormFactor.Symmetric
+Part45.formFactor = Enum.FormFactor.Symmetric
+Weld46.Parent = Part45
+Weld46.C0 = CFrame.new(0.00023651123, -2.90000916, -9.53674316e-06, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Weld46.Part0 = Part45
+Weld47.Name = "RootJoint"
+Weld47.Parent = Part45
+Weld47.Part0 = Part45
+Weld47.Part1 = Part33
+Weld47.part1 = Part33
+Script48.Name = "Health"
+Script48.Parent = Model0
+table.insert(cors,sandbox(Script48,function()
+-- Gradually regenerates the Humanoid's Health over time.
+
+local REGEN_RATE = 1/100 -- Regenerate this fraction of MaxHealth per second.
+local REGEN_STEP = 1 -- Wait this long between each regeneration step.
+
+--------------------------------------------------------------------------------
+
+local Character = script.Parent
+local Humanoid = Character:WaitForChild'Humanoid'
+
+--------------------------------------------------------------------------------
+
+while true do
+	while Humanoid.Health < Humanoid.MaxHealth do
+		local dt = wait(REGEN_STEP)
+		local dh = dt*REGEN_RATE*Humanoid.MaxHealth
+		Humanoid.Health = math.min(Humanoid.Health + dh, Humanoid.MaxHealth)
+	end
+	Humanoid.HealthChanged:Wait()
+end
+end))
+BodyColors49.Parent = Model0
+BodyColors49.HeadColor = BrickColor.new("Really black")
+BodyColors49.HeadColor3 = Color3.new(0.0666667, 0.0666667, 0.0666667)
+BodyColors49.LeftArmColor = BrickColor.new("Really black")
+BodyColors49.LeftArmColor3 = Color3.new(0.0666667, 0.0666667, 0.0666667)
+BodyColors49.LeftLegColor = BrickColor.new("Really black")
+BodyColors49.LeftLegColor3 = Color3.new(0.0666667, 0.0666667, 0.0666667)
+BodyColors49.RightArmColor = BrickColor.new("Really black")
+BodyColors49.RightArmColor3 = Color3.new(0.0666667, 0.0666667, 0.0666667)
+BodyColors49.RightLegColor = BrickColor.new("Really black")
+BodyColors49.RightLegColor3 = Color3.new(0.0666667, 0.0666667, 0.0666667)
+BodyColors49.TorsoColor = BrickColor.new("Really black")
+BodyColors49.TorsoColor3 = Color3.new(0.0666667, 0.0666667, 0.0666667)
+Script50.Name = "SCP AI"
+Script50.Parent = Model0
+table.insert(cors,sandbox(Script50,function()
+--Fully made by Rufus14
+--feel free to look at the script
+--animations are made in :lerp()
+--thanks to AdministratorMini for the mask mesh
+scp = script.Parent
+scphead = script.Parent.Head
+scphumanoid = scp:findFirstChildOfClass("Humanoid")
+scptorso = scp.Torso
+rightleg = scptorso["Right Hip"]
+rightarm = scptorso["Right Shoulder"]
+leftleg = scptorso["Left Hip"]
+leftarm = scptorso["Left Shoulder"]
+humanoidrootpart = scp.HumanoidRootPart.RootJoint
+humanoidroot = scp.HumanoidRootPart
+footstep = scphead.footstep
+head = scptorso.Neck
+theme = scphead.theme
+breath = scphead.theme
+kill1 = scphead.Hit1
+hello = scphead.hello
+ohmy = scphead.ohmy
+weallfalldown = scphead.weallfalldown
+kill2 = scphead.Hit2
+heartbeat = game:GetService("RunService").Heartbeat
+walkanim = false
+attacking = false
+chasing = false
+canattack = true
+cananimate = true
+canchase = true
+debuhg = true
+handup = false
+target = nil
+talking = false
+amount = 0
+distance = 90
+function randomwalk()
+	while wait(math.random(4,7)) do
+		if not walkanim and cananimate then
+			local function dowalk()
+				scphumanoid.WalkSpeed = 5
+				local par = Instance.new("Part", scp)
+				par.Anchored = true
+				par.Transparency = 1
+				par.Size = Vector3.new(0.01,0.01,0.01)
+				par.CanCollide = false
+				par.CFrame = humanoidroot.CFrame * CFrame.new(math.random(-60,60),math.random(-30,30),math.random(-60,60))
+				local parpos = par.Position
+				par:destroy()
+				local path = game:GetService("PathfindingService"):FindPathAsync(humanoidroot.Position, par.Position)
+				local waypoints = path:GetWaypoints()
+				if path.Status == Enum.PathStatus.Success then
+					for i,v in pairs(waypoints) do
+						if not chasing then
+							local allow = 0
+							scphumanoid:MoveTo(v.Position)
+							while (scptorso.Position - v.Position).magnitude > 3.3 and allow < 40 and not chasing do
+								allow = allow + 1
+								heartbeat:wait()
+							end
+							if v.Action == Enum.PathWaypointAction.Jump then
+								scphumanoid.Jump = true
+							end
+						end
+					end
+				else
+					dowalk()
+					heartbeat:wait()
+				end
+			end
+			dowalk()
+		end
+	end
+end
+function checkmoving(speed)
+	if speed > 2 then
+		walkanim = true
+	else
+		walkanim = false
+	end
+end
+function searchforpeople()
+	while heartbeat:wait() and scphumanoid.Health > 0 do
+		amount = 0
+		handup = false
+		scphumanoid.WalkSpeed = 5
+		chasing = false
+		for i,v in pairs(workspace:GetChildren()) do
+			if v.ClassName == "Model" and v.Name ~= scp.Name and canchase then
+				local victimhumanoid = v:findFirstChildOfClass("Humanoid")
+				local victimhead = v:findFirstChild("Head")
+				if victimhead and victimhumanoid then
+					if victimhumanoid.Health > 0 then
+						if (victimhead.Position - scphead.Position).magnitude < distance and victimhumanoid.Health > 0 then
+							amount = amount + 1
+						end
+					end
+				end
+			end
+		end
+		for i,v in pairs(workspace:GetChildren()) do
+			if v.ClassName == "Model" and v.Name ~= scp.Name and canchase then
+				local victimhumanoid = v:findFirstChildOfClass("Humanoid")
+				local victimhead = v:findFirstChild("Head")
+				if victimhead and victimhumanoid then
+					if victimhumanoid.Health > 0 then
+						if victimhumanoid.Parent == nil then
+							target = nil
+						end
+						if amount == 0 then
+							chasing = false
+						end
+						if (victimhead.Position - scphead.Position).magnitude < distance and victimhumanoid.Health > 0 then
+							if target == victimhead or target == nil then
+								chasing = true
+								if target ~= victimhead then
+									target = victimhead
+									if not talking then
+										talking = true
+										hello:Play()
+										local sayrandom = math.random(1,2)
+										if sayrandom == 1 then
+											local function ohmysay()
+												wait(1)
+												if not weallfalldown.Playing then
+													ohmy:Play()
+												end
+											end
+											spawn(ohmysay)
+										end
+									end
+								end
+								scphumanoid.WalkSpeed = 10
+								local path = game:GetService("PathfindingService"):FindPathAsync(scptorso.Position, victimhead.Position) --find the path from scp's torso to victims head
+								local waypoints = path:GetWaypoints() --get the every point of the path
+								if path.Status == Enum.PathStatus.Success then
+									--[[for q,w in pairs(waypoints) do
+										local partt = Instance.new("Part", scphead)
+										partt.Size = Vector3.new(1,1,1)
+										partt.Material = "Neon"
+										partt.Anchored = true
+										partt.Name = "nie"
+										partt.Position = w.Position
+										partt.CanCollide = false
+									end--]]
+									for q,w in pairs(waypoints) do
+										if victimhumanoid.Health > 0 then
+											local allow = 0
+											scphumanoid:MoveTo(w.Position)
+											if (victimhead.Position - scphead.Position).magnitude < distance / 2.5 then
+												if victimhumanoid.Health > 0 then
+													handup = true
+												else
+													handup = false
+												end
+											else
+												if (victimhead.Position - scphead.Position).magnitude < distance and (victimhead.Position - scphead.Position).magnitude > distance / 2.5 then
+													handup = false
+												end
+											end
+											while (scptorso.Position - w.Position).magnitude > 4 and allow < 30--[[ and victimhumanoid.Health > 0--]] do
+												allow = allow + 1
+												heartbeat:wait()
+											end
+											if w.Action == Enum.PathWaypointAction.Jump then
+												scphumanoid.Jump = true
+											end
+										end
+									end
+									scphumanoid:MoveTo(victimhead.Position)
+									for q,w in pairs(scphead:GetChildren()) do
+										if w.Name == "nie" then
+											w:destroy()
+										end
+									end
+								end
+							end
+						end
+						if amount == 0 then
+							chasing = false
+						end
+						if (victimhead.Position - scphead.Position).magnitude > distance and target == victimhead then
+							target = nil
+						end
+					end
+				end
+			end
+		end
+	end
+end
+function touchkill(part)
+	if part.Parent then
+		if part.Parent:findFirstChildOfClass("Humanoid") and part.Parent ~= scp then
+			if part.Parent:findFirstChildOfClass("Humanoid").Health > 0 then
+				target = nil
+				local hitrandom = math.random(1,2)
+				local killsing = math.random(1,3)
+				if hitrandom == 1 then
+					kill1:Play()
+				elseif hitrandom == 2 then
+					kill2:Play()
+				end
+				if killsing == 1 then
+					local function waitforit()
+						wait(1.5)
+						if not ohmy.Playing then
+							weallfalldown:Play()
+						end
+					end
+					spawn(waitforit)
+				end
+				part.Parent:findFirstChildOfClass("Humanoid").Health = 0
+				part.Parent:BreakJoints()
+				ragdollkill(part.Parent)
+			end
+		end
+	end
+end
+function upanddown()
+	while heartbeat:wait() do
+		if walkanim then
+			if not chasing then
+				local humrootc0 = humanoidrootpart.C0
+				for i = 0,1 , 0.14 do
+					if walkanim then
+						humanoidrootpart.C0 = humrootc0:lerp(CFrame.new(0,0.04,0) * CFrame.fromEulerAnglesXYZ(-0.1,0,0),i)
+						heartbeat:wait()
+					end
+				end
+				local humrootc0 = humanoidrootpart.C0
+				for i = 0,1 , 0.14 do
+					if walkanim then
+						humanoidrootpart.C0 = humrootc0:lerp(CFrame.new(0,0.08,0) * CFrame.fromEulerAnglesXYZ(-0.1,0,0),i)
+						heartbeat:wait()
+					end
+				end
+				local humrootc0 = humanoidrootpart.C0
+				for i = 0,1 , 0.14 do
+					if walkanim then
+						humanoidrootpart.C0 = humrootc0:lerp(CFrame.new(0,0.04,0) * CFrame.fromEulerAnglesXYZ(-0.1,0,0),i)
+						heartbeat:wait()
+					end
+				end
+				local humrootc0 = humanoidrootpart.C0
+				for i = 0,1 , 0.14 do
+					if walkanim then
+						humanoidrootpart.C0 = humrootc0:lerp(CFrame.new(0,-0.04,0) * CFrame.fromEulerAnglesXYZ(-0.1,0,0),i)
+						heartbeat:wait()
+					end
+				end
+				local humrootc0 = humanoidrootpart.C0
+				for i = 0,1 , 0.14 do
+					if walkanim then
+						humanoidrootpart.C0 = humrootc0:lerp(CFrame.new(0,-0.08,0) * CFrame.fromEulerAnglesXYZ(-0.1,0,0),i)
+						heartbeat:wait()
+					end
+				end
+				local humrootc0 = humanoidrootpart.C0
+				for i = 0,1 , 0.14 do
+					if walkanim then
+						humanoidrootpart.C0 = humrootc0:lerp(CFrame.new(0,-0.04,0) * CFrame.fromEulerAnglesXYZ(-0.1,0,0),i)
+						heartbeat:wait()
+					end
+				end
+			else
+				local humrootc0 = humanoidrootpart.C0
+				for i = 0,1 , 0.18 do
+					if walkanim then
+						humanoidrootpart.C0 = humrootc0:lerp(CFrame.new(0,0.04,0) * CFrame.fromEulerAnglesXYZ(-0.1,0,0),i)
+						heartbeat:wait()
+					end
+				end
+				local humrootc0 = humanoidrootpart.C0
+				for i = 0,1 , 0.18 do
+					if walkanim then
+						humanoidrootpart.C0 = humrootc0:lerp(CFrame.new(0,0.08,0) * CFrame.fromEulerAnglesXYZ(-0.1,0,0),i)
+						heartbeat:wait()
+					end
+				end
+				local humrootc0 = humanoidrootpart.C0
+				for i = 0,1 , 0.18 do
+					if walkanim then
+						humanoidrootpart.C0 = humrootc0:lerp(CFrame.new(0,0.04,0) * CFrame.fromEulerAnglesXYZ(-0.1,0,0),i)
+						heartbeat:wait()
+					end
+				end
+				local humrootc0 = humanoidrootpart.C0
+				for i = 0,1 , 0.18 do
+					if walkanim then
+						humanoidrootpart.C0 = humrootc0:lerp(CFrame.new(0,-0.04,0) * CFrame.fromEulerAnglesXYZ(-0.1,0,0),i)
+						heartbeat:wait()
+					end
+				end
+				local humrootc0 = humanoidrootpart.C0
+				for i = 0,1 , 0.18 do
+					if walkanim then
+						humanoidrootpart.C0 = humrootc0:lerp(CFrame.new(0,-0.08,0) * CFrame.fromEulerAnglesXYZ(-0.1,0,0),i)
+						heartbeat:wait()
+					end
+				end
+				local humrootc0 = humanoidrootpart.C0
+				for i = 0,1 , 0.18 do
+					if walkanim then
+						humanoidrootpart.C0 = humrootc0:lerp(CFrame.new(0,-0.04,0) * CFrame.fromEulerAnglesXYZ(-0.1,0,0),i)
+						heartbeat:wait()
+					end
+				end
+			end
+		end
+	end
+end
+function ragdollkill(character)
+	local victimshumanoid = character:findFirstChildOfClass("Humanoid")
+	if not character:findFirstChild("UpperTorso") then
+		character.Archivable = true
+		for i,v in pairs(character:GetChildren()) do
+			if v.ClassName == "Sound" then
+				v:remove()
+			end
+			for q,w in pairs(v:GetChildren()) do
+				if w.ClassName == "Sound" then
+					w:remove()
+				end
+			end
+		end
+		local ragdoll = character:Clone()
+		ragdoll:findFirstChildOfClass("Humanoid").Health = 0
+		if ragdoll:findFirstChild("Health") then
+			if ragdoll:findFirstChild("Health").ClassName == "Script" then
+				ragdoll:findFirstChild("Health").Disabled = true
+			end
+		end
+		for i,v in pairs(character:GetChildren()) do
+			if v.ClassName == "Part" or v.ClassName == "ForceField" or v.ClassName == "Accessory" or v.ClassName == "Hat" then
+				v:destroy()
+			end
+		end
+		for i,v in pairs(character:GetChildren()) do
+			if v.ClassName == "Accessory" then
+				local attachment1 = v.Handle:findFirstChildOfClass("Attachment")
+				if attachment1 then
+					for q,w in pairs(character:GetChildren()) do
+						if w.ClassName == "Part" then
+							local attachment2 = w:findFirstChild(attachment1.Name)
+							if attachment2 then
+								local hinge = Instance.new("HingeConstraint", v.Handle)
+								hinge.Attachment0 = attachment1
+								hinge.Attachment1 = attachment2
+								hinge.LimitsEnabled = true
+								hinge.LowerAngle = 0
+								hinge.UpperAngle = 0
+							end
+						end
+					end
+				end
+			end
+		end
+		ragdoll.Parent = workspace
+		if ragdoll:findFirstChild("Right Arm") then
+			local glue = Instance.new("Glue", ragdoll.Torso)
+			glue.Part0 = ragdoll.Torso
+			glue.Part1 = ragdoll:findFirstChild("Right Arm")
+			glue.C0 = CFrame.new(1.5, 0.5, 0, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+			glue.C1 = CFrame.new(0, 0.5, 0, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+			local limbcollider = Instance.new("Part", ragdoll:findFirstChild("Right Arm"))
+			limbcollider.Size = Vector3.new(1.4,1,1)
+			limbcollider.Shape = "Cylinder"
+			limbcollider.Transparency = 1
+			limbcollider.Name = "LimbCollider"
+			local limbcolliderweld = Instance.new("Weld", limbcollider)
+			limbcolliderweld.Part0 = ragdoll:findFirstChild("Right Arm")
+			limbcolliderweld.Part1 = limbcollider
+			limbcolliderweld.C0 = CFrame.fromEulerAnglesXYZ(0,0,math.pi/2) * CFrame.new(-0.3,0,0)
+		end
+		if ragdoll:findFirstChild("Left Arm") then
+			local glue = Instance.new("Glue", ragdoll.Torso)
+			glue.Part0 = ragdoll.Torso
+			glue.Part1 = ragdoll:findFirstChild("Left Arm")
+			glue.C0 = CFrame.new(-1.5, 0.5, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+			glue.C1 = CFrame.new(0, 0.5, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+			local limbcollider = Instance.new("Part", ragdoll:findFirstChild("Left Arm"))
+			limbcollider.Size = Vector3.new(1.4,1,1)
+			limbcollider.Shape = "Cylinder"
+			limbcollider.Name = "LimbCollider"
+			limbcollider.Transparency = 1
+			local limbcolliderweld = Instance.new("Weld", limbcollider)
+			limbcolliderweld.Part0 = ragdoll:findFirstChild("Left Arm")
+			limbcolliderweld.Part1 = limbcollider
+			limbcolliderweld.C0 = CFrame.fromEulerAnglesXYZ(0,0,math.pi/2) * CFrame.new(-0.3,0,0)
+		end
+		if ragdoll:findFirstChild("Left Leg") then
+			local glue = Instance.new("Glue", ragdoll.Torso)
+			glue.Part0 = ragdoll.Torso
+			glue.Part1 = ragdoll:findFirstChild("Left Leg")
+			glue.C0 = CFrame.new(-0.5, -1, 0, -0, -0, -1, 0, 1, 0, 1, 0, 0)
+			glue.C1 = CFrame.new(-0, 1, 0, -0, -0, -1, 0, 1, 0, 1, 0, 0)
+			local limbcollider = Instance.new("Part", ragdoll:findFirstChild("Left Leg"))
+			limbcollider.Size = Vector3.new(1.4,1,1)
+			limbcollider.Shape = "Cylinder"
+			limbcollider.Name = "LimbCollider"
+			limbcollider.Transparency = 1
+			local limbcolliderweld = Instance.new("Weld", limbcollider)
+			limbcolliderweld.Part0 = ragdoll:findFirstChild("Left Leg")
+			limbcolliderweld.Part1 = limbcollider
+			limbcolliderweld.C0 = CFrame.fromEulerAnglesXYZ(0,0,math.pi/2) * CFrame.new(-0.3,0,0)
+		end
+		if ragdoll:findFirstChild("Right Leg") then
+			local glue = Instance.new("Glue", ragdoll.Torso)
+			glue.Part0 = ragdoll.Torso
+			glue.Part1 = ragdoll:findFirstChild("Right Leg")
+			glue.C0 = CFrame.new(0.5, -1, 0, 0, 0, 1, 0, 1, 0, -1, -0, -0)
+			glue.C1 = CFrame.new(0, 1, 0, 0, 0, 1, 0, 1, 0, -1, -0, -0)
+			local limbcollider = Instance.new("Part", ragdoll:findFirstChild("Right Leg"))
+			limbcollider.Size = Vector3.new(1.4,1,1)
+			limbcollider.Shape = "Cylinder"
+			limbcollider.Name = "LimbCollider"
+			limbcollider.Transparency = 1
+			local limbcolliderweld = Instance.new("Weld", limbcollider)
+			limbcolliderweld.Part0 = ragdoll:findFirstChild("Right Leg")
+			limbcolliderweld.Part1 = limbcollider
+			limbcolliderweld.C0 = CFrame.fromEulerAnglesXYZ(0,0,math.pi/2) * CFrame.new(-0.3,0,0)
+		end
+		if ragdoll:findFirstChild("Head") and ragdoll.Torso:findFirstChild("NeckAttachment") then
+			local HeadAttachment = Instance.new("Attachment", ragdoll["Head"])
+			HeadAttachment.Position = Vector3.new(0, -0.5, 0)
+			local connection = Instance.new('HingeConstraint', ragdoll["Head"])
+			connection.LimitsEnabled = true
+			connection.Attachment0 = ragdoll.Torso.NeckAttachment
+			connection.Attachment1 = HeadAttachment
+			connection.UpperAngle = 60
+			connection.LowerAngle = -60
+		elseif ragdoll:findFirstChild("Head") and not ragdoll.Torso:findFirstChild("NeckAttachment") then
+			local hedweld = Instance.new("Weld", ragdoll.Torso)
+			hedweld.Part0 = ragdoll.Torso
+			hedweld.Part1 = ragdoll.Head
+			hedweld.C0 = CFrame.new(0,1.5,0)
+		end
+		game.Debris:AddItem(ragdoll, 30)
+	elseif character:findFirstChild("UpperTorso") then
+		character.Archivable = true
+		for i,v in pairs(character:GetChildren()) do
+			if v.ClassName == "Sound" then
+				v:remove()
+			end
+			for q,w in pairs(v:GetChildren()) do
+				if w.ClassName == "Sound" then
+					w:remove()
+				end
+			end
+		end
+		local ragdoll = character:Clone()
+		ragdoll:findFirstChildOfClass("Humanoid").Health = 0
+		if ragdoll:findFirstChild("Health") then
+			if ragdoll:findFirstChild("Health").ClassName == "Script" then
+				ragdoll:findFirstChild("Health").Disabled = true
+			end
+		end
+		for i,v in pairs(character:GetChildren()) do
+			if v.ClassName == "Part" or v.ClassName == "ForceField" or v.ClassName == "Accessory" or v.ClassName == "Hat" or v.ClassName == "MeshPart" then
+				v:destroy()
+			end
+		end
+		for i,v in pairs(character:GetChildren()) do
+			if v.ClassName == "Accessory" then
+				local attachment1 = v.Handle:findFirstChildOfClass("Attachment")
+				if attachment1 then
+					for q,w in pairs(character:GetChildren()) do
+						if w.ClassName == "Part" or w.ClassName == "MeshPart" then
+							local attachment2 = w:findFirstChild(attachment1.Name)
+							if attachment2 then
+								local hinge = Instance.new("HingeConstraint", v.Handle)
+								hinge.Attachment0 = attachment1
+								hinge.Attachment1 = attachment2
+								hinge.LimitsEnabled = true
+								hinge.LowerAngle = 0
+								hinge.UpperAngle = 0
+							end
+						end
+					end
+				end
+			end
+		end
+		ragdoll.Parent = workspace
+		local Humanoid = ragdoll:findFirstChildOfClass("Humanoid")
+		Humanoid.PlatformStand = true
+		local function makeballconnections(limb, attachementone, attachmenttwo, twistlower, twistupper)
+			local connection = Instance.new('BallSocketConstraint', limb)
+			connection.LimitsEnabled = true
+			connection.Attachment0 = attachementone
+			connection.Attachment1 = attachmenttwo
+			connection.TwistLimitsEnabled = true
+			connection.TwistLowerAngle = twistlower
+			connection.TwistUpperAngle = twistupper
+			local limbcollider = Instance.new("Part", limb)
+			limbcollider.Size = Vector3.new(0.1,1,1)
+			limbcollider.Shape = "Cylinder"
+			limbcollider.Transparency = 1
+			limbcollider:BreakJoints()
+			local limbcolliderweld = Instance.new("Weld", limbcollider)
+			limbcolliderweld.Part0 = limb
+			limbcolliderweld.Part1 = limbcollider
+			limbcolliderweld.C0 = CFrame.fromEulerAnglesXYZ(0,0,math.pi/2)
+		end
+		local function makehingeconnections(limb, attachementone, attachmenttwo, lower, upper)
+			local connection = Instance.new('HingeConstraint', limb)
+			connection.LimitsEnabled = true
+			connection.Attachment0 = attachementone
+			connection.Attachment1 = attachmenttwo
+			connection.LimitsEnabled = true
+			connection.LowerAngle = lower
+			connection.UpperAngle = upper
+			local limbcollider = Instance.new("Part", limb)
+			limbcollider.Size = Vector3.new(0.1,1,1)
+			limbcollider.Shape = "Cylinder"
+			limbcollider.Transparency = 1
+			limbcollider:BreakJoints()
+			local limbcolliderweld = Instance.new("Weld", limbcollider)
+			limbcolliderweld.Part0 = limb
+			limbcolliderweld.Part1 = limbcollider
+			limbcolliderweld.C0 = CFrame.fromEulerAnglesXYZ(0,0,math.pi/2)
+		end
+		local HeadAttachment = Instance.new("Attachment", Humanoid.Parent.Head)
+		HeadAttachment.Position = Vector3.new(0, -0.5, 0)
+		makehingeconnections(Humanoid.Parent.Head, HeadAttachment, ragdoll.UpperTorso.NeckAttachment, -50, 50)
+		makehingeconnections(Humanoid.Parent.LowerTorso, Humanoid.Parent.LowerTorso.WaistRigAttachment, Humanoid.Parent.UpperTorso.WaistRigAttachment, -50, 50)
+		makeballconnections(Humanoid.Parent.LeftUpperArm, Humanoid.Parent.LeftUpperArm.LeftShoulderRigAttachment, Humanoid.Parent.UpperTorso.LeftShoulderRigAttachment, -200, 200, 180)
+		makehingeconnections(Humanoid.Parent.LeftLowerArm, Humanoid.Parent.LeftLowerArm.LeftElbowRigAttachment, Humanoid.Parent.LeftUpperArm.LeftElbowRigAttachment, 0, -60)
+		makehingeconnections(Humanoid.Parent.LeftHand, Humanoid.Parent.LeftHand.LeftWristRigAttachment, Humanoid.Parent.LeftLowerArm.LeftWristRigAttachment, -20, 20)
+		--
+		makeballconnections(Humanoid.Parent.RightUpperArm, Humanoid.Parent.RightUpperArm.RightShoulderRigAttachment, Humanoid.Parent.UpperTorso.RightShoulderRigAttachment, -200, 200, 180)
+		makehingeconnections(Humanoid.Parent.RightLowerArm, Humanoid.Parent.RightLowerArm.RightElbowRigAttachment, Humanoid.Parent.RightUpperArm.RightElbowRigAttachment, 0, -60)
+		makehingeconnections(Humanoid.Parent.RightHand, Humanoid.Parent.RightHand.RightWristRigAttachment, Humanoid.Parent.RightLowerArm.RightWristRigAttachment, -20, 20)
+		--
+		makeballconnections(Humanoid.Parent.RightUpperLeg, Humanoid.Parent.RightUpperLeg.RightHipRigAttachment, Humanoid.Parent.LowerTorso.RightHipRigAttachment, -80, 80, 80)
+		makehingeconnections(Humanoid.Parent.RightLowerLeg, Humanoid.Parent.RightLowerLeg.RightKneeRigAttachment, Humanoid.Parent.RightUpperLeg.RightKneeRigAttachment, 0, 60)
+		makehingeconnections(Humanoid.Parent.RightFoot, Humanoid.Parent.RightFoot.RightAnkleRigAttachment, Humanoid.Parent.RightLowerLeg.RightAnkleRigAttachment, -20, 20)
+		--
+		makeballconnections(Humanoid.Parent.LeftUpperLeg, Humanoid.Parent.LeftUpperLeg.LeftHipRigAttachment, Humanoid.Parent.LowerTorso.LeftHipRigAttachment, -80, 80, 80)
+		makehingeconnections(Humanoid.Parent.LeftLowerLeg, Humanoid.Parent.LeftLowerLeg.LeftKneeRigAttachment, Humanoid.Parent.LeftUpperLeg.LeftKneeRigAttachment, 0, 60)
+		makehingeconnections(Humanoid.Parent.LeftFoot, Humanoid.Parent.LeftFoot.LeftAnkleRigAttachment, Humanoid.Parent.LeftLowerLeg.LeftAnkleRigAttachment, -20, 20)
+		for i,v in pairs(Humanoid.Parent:GetChildren()) do
+			if v.ClassName == "Accessory" then
+				local attachment1 = v.Handle:findFirstChildOfClass("Attachment")
+				if attachment1 then
+					for q,w in pairs(Humanoid.Parent:GetChildren()) do
+						if w.ClassName == "Part" then
+							local attachment2 = w:findFirstChild(attachment1.Name)
+							if attachment2 then
+								local hinge = Instance.new("HingeConstraint", v.Handle)
+								hinge.Attachment0 = attachment1
+								hinge.Attachment1 = attachment2
+								hinge.LimitsEnabled = true
+								hinge.LowerAngle = 0
+								hinge.UpperAngle = 0
+							end
+						end
+					end
+				end
+			end
+		end
+		for i,v in pairs(ragdoll:GetChildren()) do
+			for q,w in pairs(v:GetChildren()) do
+				if w.ClassName == "Motor6D"--[[ and w.Name ~= "Neck"--]] then
+					w:destroy()
+				end
+			end
+		end
+		if ragdoll:findFirstChild("HumanoidRootPart") then
+			ragdoll.HumanoidRootPart.Anchored = true
+			ragdoll.HumanoidRootPart.CanCollide = false
+		end
+		game.Debris:AddItem(ragdoll, 30)
+	end
+end
+function checkanim()
+	while heartbeat:wait() do
+		if not cananimate then
+			footstep:Stop()
+		end
+		if walkanim then
+			footstep:Play()
+			if handup then
+				if chasing then
+					footstep.PlaybackSpeed = 1
+					scphumanoid.WalkSpeed = 10
+					for i = 0,0.175 , 0.0054 do
+						if walkanim and cananimate then
+							rightarm.C0 = rightarm.C0:lerp(CFrame.new(1.14999986, 0.622638702, -0.65177536, 1, -0, 0, 0, -0.173647955, -0.984807789, 0, 0.984807789, -0.173647955),i)
+							leftarm.C0 = leftarm.C0:lerp(CFrame.new(-1.19999981, -0.0439729691, 0.371006012, 1, 0, 0, 0, 0.707106352, 0.707107365, 0, -0.707107365, 0.707106352),i)
+							leftleg.C0 = leftleg.C0:lerp(CFrame.new(-0.399999619, -1.9675324, -0.772092998, 1, 0, 0, 0, 0.866025388, -0.500000238, 0, 0.500000238, 0.866025388),i)
+							rightleg.C0 = rightleg.C0:lerp(CFrame.new(0.400000095, -1.97076297, 0.764549196, 1, 0, 0, 0, 0.819151819, 0.573576868, 0, -0.573576868, 0.819151819),i)
+							head.C0 = head.C0:lerp(CFrame.new(4.76837158e-07, 1.49999905, 2.08616257e-07, 1, 0, 0, 0, 0.99619472, -0.0871554911, 0, 0.0871554911, 0.99619472),i)
+							heartbeat:wait()
+						end
+					end
+					for i = 0,0.175 , 0.0054 do
+						if walkanim and cananimate then
+							rightarm.C0 = rightarm.C0:lerp(CFrame.new(1.14999986, 0.622638702, -0.65177536, 1, -0, 0, 0, -0.173647955, -0.984807789, 0, 0.984807789, -0.173647955) * CFrame.new(0,0,0.15) * CFrame.fromEulerAnglesXYZ(-0.15,0,0),i)
+							leftarm.C0 = leftarm.C0:lerp(CFrame.new(-1.19999981, -0.0780918598, -0.518516839, 1, 0, 0, 0, 0.819151819, -0.573576868, 0, 0.573576868, 0.819151819),i)
+							leftleg.C0 = leftleg.C0:lerp(CFrame.new(-0.399999619, -1.94683981, 0.739386797, 1, 0, 0, 0, 0.819151819, 0.573576868, 0, -0.573576868, 0.819151819),i)
+							rightleg.C0 = rightleg.C0:lerp(CFrame.new(0.400000095, -1.92139232, -0.787887871, 1, 0, 0, 0, 0.819151819, -0.573576868, 0, 0.573576868, 0.819151819),i)
+							head.C0 = head.C0:lerp(CFrame.new(4.76837158e-07, 1.49999905, 2.08616257e-07, 1, 0, 0, 0, 0.99619472, -0.0871554911, 0, 0.0871554911, 0.99619472),i)
+							heartbeat:wait()
+						end
+					end
+				else
+					scphumanoid.WalkSpeed = 5
+					footstep.PlaybackSpeed = 0.7
+					for i = 0,0.15 , 0.004 do
+						if walkanim and cananimate then
+							rightarm.C0 = rightarm.C0:lerp(CFrame.new(1.14999986, 0.622638702, -0.65177536, 1, -0, 0, 0, -0.173647955, -0.984807789, 0, 0.984807789, -0.173647955),i)
+							leftarm.C0 = leftarm.C0:lerp(CFrame.new(-1.19999981, -0.0439729691, 0.371006012, 1, 0, 0, 0, 0.707106352, 0.707107365, 0, -0.707107365, 0.707106352),i)
+							leftleg.C0 = leftleg.C0:lerp(CFrame.new(-0.399999619, -1.9675324, -0.772092998, 1, 0, 0, 0, 0.866025388, -0.500000238, 0, 0.500000238, 0.866025388),i)
+							rightleg.C0 = rightleg.C0:lerp(CFrame.new(0.400000095, -1.97076297, 0.764549196, 1, 0, 0, 0, 0.819151819, 0.573576868, 0, -0.573576868, 0.819151819),i)
+							head.C0 = head.C0:lerp(CFrame.new(4.76837158e-07, 1.49999905, 2.08616257e-07, 1, 0, 0, 0, 0.99619472, -0.0871554911, 0, 0.0871554911, 0.99619472),i)
+							heartbeat:wait()
+						end
+					end
+					for i = 0,0.15 , 0.004 do
+						if walkanim and cananimate then
+							rightarm.C0 = rightarm.C0:lerp(CFrame.new(1.14999986, 0.622638702, -0.65177536, 1, -0, 0, 0, -0.173647955, -0.984807789, 0, 0.984807789, -0.173647955) * CFrame.new(0,0,0.15) * CFrame.fromEulerAnglesXYZ(-0.15,0,0),i)
+							leftarm.C0 = leftarm.C0:lerp(CFrame.new(-1.19999981, -0.0780918598, -0.518516839, 1, 0, 0, 0, 0.819151819, -0.573576868, 0, 0.573576868, 0.819151819),i)
+							leftleg.C0 = leftleg.C0:lerp(CFrame.new(-0.399999619, -1.94683981, 0.739386797, 1, 0, 0, 0, 0.819151819, 0.573576868, 0, -0.573576868, 0.819151819),i)
+							rightleg.C0 = rightleg.C0:lerp(CFrame.new(0.400000095, -1.92139232, -0.787887871, 1, 0, 0, 0, 0.819151819, -0.573576868, 0, 0.573576868, 0.819151819),i)
+							head.C0 = head.C0:lerp(CFrame.new(4.76837158e-07, 1.49999905, 2.08616257e-07, 1, 0, 0, 0, 0.99619472, -0.0871554911, 0, 0.0871554911, 0.99619472),i)
+							heartbeat:wait()
+						end
+					end
+				end
+			else
+				if chasing then
+					scphumanoid.WalkSpeed = 10
+					footstep.PlaybackSpeed = 1
+					for i = 0,0.175 , 0.0054 do
+						if walkanim and cananimate then
+							rightarm.C0 = rightarm.C0:lerp(CFrame.new(1.20000029, -0.0988817215, -0.520950854, 1, 0, 0, 0, 0.819151819, -0.573576868, 0, 0.573576868, 0.819151819),i)
+							leftarm.C0 = leftarm.C0:lerp(CFrame.new(-1.19999981, -0.0439729691, 0.371006012, 1, 0, 0, 0, 0.707106352, 0.707107365, 0, -0.707107365, 0.707106352),i)
+							leftleg.C0 = leftleg.C0:lerp(CFrame.new(-0.399999619, -1.9675324, -0.772092998, 1, 0, 0, 0, 0.866025388, -0.500000238, 0, 0.500000238, 0.866025388),i)
+							rightleg.C0 = rightleg.C0:lerp(CFrame.new(0.400000095, -1.97076297, 0.764549196, 1, 0, 0, 0, 0.819151819, 0.573576868, 0, -0.573576868, 0.819151819),i)
+							head.C0 = head.C0:lerp(CFrame.new(4.76837158e-07, 1.49999905, 2.08616257e-07, 1, 0, 0, 0, 0.99619472, -0.0871554911, 0, 0.0871554911, 0.99619472),i)
+							heartbeat:wait()
+						end
+					end
+					for i = 0,0.175 , 0.0054 do
+						if walkanim and cananimate then
+							rightarm.C0 = rightarm.C0:lerp(CFrame.new(1.20000029, 0.00718426704, 0.645774603, 1, 0, 0, 0, 0.707106352, 0.707107365, 0, -0.707107365, 0.707106352),i)
+							leftarm.C0 = leftarm.C0:lerp(CFrame.new(-1.19999981, -0.0780918598, -0.518516839, 1, 0, 0, 0, 0.819151819, -0.573576868, 0, 0.573576868, 0.819151819),i)
+							leftleg.C0 = leftleg.C0:lerp(CFrame.new(-0.399999619, -1.94683981, 0.739386797, 1, 0, 0, 0, 0.819151819, 0.573576868, 0, -0.573576868, 0.819151819),i)
+							rightleg.C0 = rightleg.C0:lerp(CFrame.new(0.400000095, -1.92139232, -0.787887871, 1, 0, 0, 0, 0.819151819, -0.573576868, 0, 0.573576868, 0.819151819),i)
+							head.C0 = head.C0:lerp(CFrame.new(4.76837158e-07, 1.49999905, 2.08616257e-07, 1, 0, 0, 0, 0.99619472, -0.0871554911, 0, 0.0871554911, 0.99619472),i)
+							heartbeat:wait()
+						end
+					end
+				else
+					scphumanoid.WalkSpeed = 5
+					footstep.PlaybackSpeed = 0.7
+					for i = 0,0.15 , 0.004 do
+						if walkanim and cananimate then
+							rightarm.C0 = rightarm.C0:lerp(CFrame.new(1.20000029, -0.0988817215, -0.520950854, 1, 0, 0, 0, 0.819151819, -0.573576868, 0, 0.573576868, 0.819151819),i)
+							leftarm.C0 = leftarm.C0:lerp(CFrame.new(-1.19999981, -0.0439729691, 0.371006012, 1, 0, 0, 0, 0.707106352, 0.707107365, 0, -0.707107365, 0.707106352),i)
+							leftleg.C0 = leftleg.C0:lerp(CFrame.new(-0.399999619, -1.9675324, -0.772092998, 1, 0, 0, 0, 0.866025388, -0.500000238, 0, 0.500000238, 0.866025388),i)
+							rightleg.C0 = rightleg.C0:lerp(CFrame.new(0.400000095, -1.97076297, 0.764549196, 1, 0, 0, 0, 0.819151819, 0.573576868, 0, -0.573576868, 0.819151819),i)
+							head.C0 = head.C0:lerp(CFrame.new(4.76837158e-07, 1.49999905, 2.08616257e-07, 1, 0, 0, 0, 0.99619472, -0.0871554911, 0, 0.0871554911, 0.99619472),i)
+							heartbeat:wait()
+						end
+					end
+					for i = 0,0.15 , 0.004 do
+						if walkanim and cananimate then
+							rightarm.C0 = rightarm.C0:lerp(CFrame.new(1.20000029, 0.00718426704, 0.645774603, 1, 0, 0, 0, 0.707106352, 0.707107365, 0, -0.707107365, 0.707106352),i)
+							leftarm.C0 = leftarm.C0:lerp(CFrame.new(-1.19999981, -0.0780918598, -0.518516839, 1, 0, 0, 0, 0.819151819, -0.573576868, 0, 0.573576868, 0.819151819),i)
+							leftleg.C0 = leftleg.C0:lerp(CFrame.new(-0.399999619, -1.94683981, 0.739386797, 1, 0, 0, 0, 0.819151819, 0.573576868, 0, -0.573576868, 0.819151819),i)
+							rightleg.C0 = rightleg.C0:lerp(CFrame.new(0.400000095, -1.92139232, -0.787887871, 1, 0, 0, 0, 0.819151819, -0.573576868, 0, 0.573576868, 0.819151819),i)
+							head.C0 = head.C0:lerp(CFrame.new(4.76837158e-07, 1.49999905, 2.08616257e-07, 1, 0, 0, 0, 0.99619472, -0.0871554911, 0, 0.0871554911, 0.99619472),i)
+							heartbeat:wait()
+						end
+					end
+				end
+			end
+		else
+			footstep:Stop()
+			talking = false
+			for i = 0,0.18 , 0.003 do
+				if not walkanim and cananimate then
+					rightarm.C0 = rightarm.C0:lerp(CFrame.new(1.19564247, 0.00699353218, 0.0457750075, 0.996194661, -0.087155968, 0, 0.087155968, 0.996194661, 0, 0, 0, 1),i)
+					leftarm.C0 = leftarm.C0:lerp(CFrame.new(-1.19564247, -0.0282824039, -0.0685169995, 0.996194661, 0.087155968, 0, -0.087155968, 0.996194661, 0, 0, 0, 1),i)
+					leftleg.C0 = leftleg.C0:lerp(CFrame.new(-0.503977299, -1.98793423, -0.0106131211, 0.996194661, 0.087155968, 0, -0.087155968, 0.996194661, 0, 0, 0, 1),i)
+					rightleg.C0 = rightleg.C0:lerp(CFrame.new(0.449810028, -1.96703422, -0.0378880017, 0.996194661, -0.087155968, 0, 0.087155968, 0.996194661, 0, 0, 0, 1),i)
+					head.C0 = head.C0:lerp(CFrame.new(0,1.5,0),i)
+					humanoidrootpart.C0 = humanoidrootpart.C0:lerp(CFrame.new(0,0,0),i)
+					heartbeat:wait()
+				end
+			end
+		end
+	end
+end
+spawn(randomwalk)
+scphumanoid.Running:connect(checkmoving)
+scp["Right Arm"].Touched:connect(touchkill)
+spawn(checkanim)
+spawn(upanddown)
+spawn(searchforpeople)
+end))
+Part51.Name = "Eye1"
+Part51.Parent = Model0
+Part51.CFrame = CFrame.new(-32.035717, 4.60000086, -45.6604462, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Part51.Orientation = Vector3.new(0, 180, 0)
+Part51.Position = Vector3.new(-32.035717, 4.60000086, -45.6604462)
+Part51.Rotation = Vector3.new(-180, 0, -180)
+Part51.Size = Vector3.new(0.100000009, 0.100000009, 0.100000009)
+Part51.BottomSurface = Enum.SurfaceType.Smooth
+Part51.Material = Enum.Material.Neon
+Part51.TopSurface = Enum.SurfaceType.Smooth
+Part51.Shape = Enum.PartType.Ball
+Part52.Name = "Eye2"
+Part52.Parent = Model0
+Part52.CFrame = CFrame.new(-31.5857201, 4.60000086, -45.6604462, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Part52.Orientation = Vector3.new(0, 180, 0)
+Part52.Position = Vector3.new(-31.5857201, 4.60000086, -45.6604462)
+Part52.Rotation = Vector3.new(-180, 0, -180)
+Part52.Size = Vector3.new(0.100000009, 0.100000009, 0.100000009)
+Part52.BottomSurface = Enum.SurfaceType.Smooth
+Part52.Material = Enum.Material.Neon
+Part52.TopSurface = Enum.SurfaceType.Smooth
+Part52.Shape = Enum.PartType.Ball
+Pants53.Name = "Pants"
+Pants53.Parent = Model0
+Pants53.PantsTemplate = "rbxassetid://243651286"
+Shirt54.Name = "Shirt"
+Shirt54.Parent = Model0
+Shirt54.ShirtTemplate = "rbxassetid://768461074"
+Part55.Name = "Mask"
+Part55.Parent = Model0
+Part55.CFrame = CFrame.new(-31.8107185, 4.50000048, -45.2854576, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Part55.Orientation = Vector3.new(0, 180, 0)
+Part55.Position = Vector3.new(-31.8107185, 4.50000048, -45.2854576)
+Part55.Rotation = Vector3.new(-180, 0, -180)
+Part55.Color = Color3.new(0.972549, 0.972549, 0.972549)
+Part55.Size = Vector3.new(1.59999919, 1.4000001, 1.4000001)
+Part55.BottomSurface = Enum.SurfaceType.Smooth
+Part55.BrickColor = BrickColor.new("Institutional white")
+Part55.CanCollide = false
+Part55.TopSurface = Enum.SurfaceType.Smooth
+Part55.brickColor = BrickColor.new("Institutional white")
+Part55.FormFactor = Enum.FormFactor.Custom
+Part55.formFactor = Enum.FormFactor.Custom
+SpecialMesh56.Parent = Part55
+SpecialMesh56.MeshId = "rbxassetid://2196730592"
+SpecialMesh56.Scale = Vector3.new(0.0599999987, 0.0599999987, 0.100000001)
+SpecialMesh56.MeshType = Enum.MeshType.FileMesh
+Part57.Name = "Hood"
+Part57.Parent = Model0
+Part57.CFrame = CFrame.new(-31.8107185, 4.60003042, -46.1854401, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Part57.Orientation = Vector3.new(0, 180, 0)
+Part57.Position = Vector3.new(-31.8107185, 4.60003042, -46.1854401)
+Part57.Rotation = Vector3.new(-180, 0, -180)
+Part57.Color = Color3.new(0.0666667, 0.0666667, 0.0666667)
+Part57.Size = Vector3.new(1.59999919, 1.4000001, 1.4000001)
+Part57.BottomSurface = Enum.SurfaceType.Smooth
+Part57.BrickColor = BrickColor.new("Really black")
+Part57.CanCollide = false
+Part57.TopSurface = Enum.SurfaceType.Smooth
+Part57.brickColor = BrickColor.new("Really black")
+Part57.FormFactor = Enum.FormFactor.Custom
+Part57.formFactor = Enum.FormFactor.Custom
+SpecialMesh58.Parent = Part57
+SpecialMesh58.MeshId = "http://www.roblox.com/asset/?id=69430030"
+SpecialMesh58.Scale = Vector3.new(1, 1, 1.10000002)
+SpecialMesh58.MeshType = Enum.MeshType.FileMesh
+Camera59.Name = "ThumbnailCamera"
+Camera59.Parent = Model0
+Camera59.CFrame = CFrame.new(10.9115391, 3.16879725, -37.1263885, 0.617880642, -0.0769587159, 0.782496631, -7.4505806e-09, 0.995198488, 0.0978780016, -0.78627193, -0.0604769289, 0.614913881)
+Camera59.CoordinateFrame = CFrame.new(10.9115391, 3.16879725, -37.1263885, 0.617880642, -0.0769587159, 0.782496631, -7.4505806e-09, 0.995198488, 0.0978780016, -0.78627193, -0.0604769289, 0.614913881)
+Camera59.Focus = CFrame.new(6.76428127, 2.65004063, -40.3854523, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Camera59.focus = CFrame.new(6.76428127, 2.65004063, -40.3854523, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+for i,v in pairs(mas:GetChildren()) do
+	v.Parent = workspace
+	pcall(function() v:MakeJoints() end)
+end
+mas:Destroy()
+for i,v in pairs(cors) do
+	spawn(function()
+		pcall(v)
+	end)
+end
