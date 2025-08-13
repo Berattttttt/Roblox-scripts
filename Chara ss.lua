@@ -26,8 +26,10 @@ local idle1 = true
 local canchange = false
 local idle = true
 local p = owner
-local char = p.Character
-local mouse = p:GetMouse()
+local player = game.Players.LocalPlayer
+local char = player and player.Character
+if char then
+endlocal mouse = p:GetMouse()
 local larm = char["Left Arm"]
 local rarm = char["Right Arm"]
 local lleg = char["Left Leg"]
