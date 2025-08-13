@@ -1,10 +1,3 @@
-
---chara fe version.1
---fixed by MoonSS
---dont leak you found a rare script 
--- =)
-
-
 wait(0.1)
 local lovecounter = false
 local love = 99
