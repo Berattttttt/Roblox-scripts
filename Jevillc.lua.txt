@@ -14,28 +14,6 @@ Don't leak pls
 Enjoy ;)
 --------------------------------
 ]])
-PlayerGui = Player.PlayerGui
-Cam = workspace.CurrentCamera
-Backpack = Player.Backpack
-Character = Player.Character
-Humanoid = Character.Humanoid
-Mouse = Player:GetMouse()
-RootPart = Character["HumanoidRootPart"]
-Torso = Character["Torso"]
-Head = Character["Head"]
-RightArm = Character["Right Arm"]
-LeftArm = Character["Left Arm"]
-RightLeg = Character["Right Leg"]
-LeftLeg = Character["Left Leg"]
-RootJoint = RootPart["RootJoint"]
-Neck = Torso["Neck"]
-RightShoulder = Torso["Right Shoulder"]
-LeftShoulder = Torso["Left Shoulder"]
-RightHip = Torso["Right Hip"]
-LeftHip = Torso["Left Hip"]
-
-Character = Player.Character
-Humanoid = Character.Humanoid
 ---------
 plr = game.Players.LocalPlayer
 chara = plr.Character
